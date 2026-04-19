@@ -30,13 +30,14 @@
 
 /* ── Reset & Base ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 16px; }
+html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; }
 body {
   font-family: var(--font-body);
   background-color: var(--bg-primary);
   color: var(--text-main);
   line-height: 1.7;
   overflow-x: hidden;
+  width: 100%;
 }
 img { display: block; max-width: 100%; }
 a { text-decoration: none; color: inherit; }
@@ -1129,13 +1130,19 @@ input, textarea {
 @media (max-width: 420px) {
   .container { padding: 0 16px; }
   .hero-eyebrow { font-size: 0.7rem; }
-  .skills-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-  .skill-card { padding: 18px 10px; }
-  .about-highlights { justify-content: center; }
+  .hero-meta { flex-direction: column; align-items: center; gap: 8px; }
+  .skills-grid { grid-template-columns: 1fr; gap: 12px; }
+  .skill-card { padding: 16px 12px; flex-direction: row; text-align: left; justify-content: flex-start; }
+  .skills-bars { padding: 24px 16px; }
+  .about-info-card { padding: 24px 16px; }
+  .project-card { padding: 24px 16px; }
+  .cert-card { padding: 24px 16px; align-items: center; text-align: center; }
+  .about-highlights { justify-content: center; flex-direction: column; align-items: center; }
   .timeline::before { display: none; }
   .timeline { padding-left: 0; }
   .timeline-item { padding-left: 0; }
   .timeline-dot { display: none; }
+  .contact-item { flex-direction: column; text-align: center; }
 }
 
 /* ============================================================
