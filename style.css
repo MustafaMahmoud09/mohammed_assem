@@ -190,27 +190,56 @@ input, textarea {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
 }
 .nav-link {
-  font-size: 0.88rem;
-  font-weight: 400;
+  position: relative;
+  font-size: 0.92rem;
+  font-weight: 500;
   color: var(--text-sec);
-  padding: 6px 12px;
-  border-radius: 6px;
-  transition: color var(--transition), background var(--transition);
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all var(--transition);
 }
-.nav-link:hover { color: var(--text-main); background: var(--border-soft); }
+.nav-link:hover { 
+  color: var(--text-main); 
+  background: rgba(255, 255, 255, 0.03); 
+}
+
+/* Desktop hover line indicator */
+@media (min-width: 769px) {
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.3s ease;
+    border-radius: 2px;
+  }
+  .nav-link:not(.nav-cta):hover::after {
+    width: 20px;
+  }
+}
+
 .nav-link.nav-cta {
-  background: var(--accent-dim);
-  border: 1px solid var(--border);
-  color: var(--accent);
+  background: linear-gradient(135deg, var(--accent), var(--accent-cyan));
+  color: #0d1117;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 4px 14px rgba(96, 165, 250, 0.25);
+  margin-left: 12px;
 }
 .nav-link.nav-cta:hover {
-  background: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(96, 165, 250, 0.4);
+  background: linear-gradient(135deg, var(--accent-cyan), var(--accent));
   color: #0d1117;
-  border-color: var(--accent);
 }
+
 /* Hamburger */
 .hamburger {
   display: none;
@@ -223,7 +252,7 @@ input, textarea {
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--text-sec);
+  background: var(--text-main);
   border-radius: 2px;
   transition: var(--transition);
 }
@@ -1081,22 +1110,61 @@ input, textarea {
   .hamburger { display: flex; }
   .nav-links {
     position: fixed;
-    top: var(--nav-h);
-    left: 0;
-    right: 0;
-    background: rgba(17, 24, 39, 0.98);
-    backdrop-filter: blur(16px);
+    top: calc(var(--nav-h) + 12px);
+    left: 20px;
+    right: 20px;
+    background: rgba(17, 24, 39, 0.92);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
     flex-direction: column;
     align-items: stretch;
-    padding: 20px 24px 28px;
+    padding: 24px 20px;
     gap: 4px;
-    transform: translateY(-110%);
+    transform: translateY(-20px) scale(0.98);
     opacity: 0;
-    transition: transform 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s ease;
-    border-bottom: 1px solid var(--border-soft);
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   }
-  .nav-links.open { transform: translateY(0); opacity: 1; }
-  .nav-link { padding: 12px 14px; font-size: 0.95rem; border-radius: 8px; }
+  .nav-links.open { 
+    transform: translateY(0) scale(1); 
+    opacity: 1; 
+    visibility: visible;
+  }
+  .nav-links li {
+    width: 100%;
+  }
+  .nav-link { 
+    display: block; /* Essential for stretching inside li */
+    width: 100%;
+    padding: 14px 20px; 
+    font-size: 1rem; 
+    font-weight: 500;
+    border-radius: 12px; 
+    background: transparent; /* No murky background */
+    text-align: left; /* Cleaner alignment */
+    color: var(--text-sec);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav-link:hover {
+    background: rgba(255, 255, 255, 0.03); /* Subtle elegance */
+    color: var(--text-main);
+    padding-left: 26px; /* Smooth slide-in effect */
+  }
+  .nav-link.nav-cta {
+    margin-left: 0;
+    margin-top: 16px;
+    padding: 14px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, var(--accent), var(--accent-cyan));
+    color: #0d1117;
+  }
+  .nav-link.nav-cta:hover {
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent));
+    padding-left: 20px; /* Don't slide the CTA */
+  }
 
   /* Hero */
   .hero-name { font-size: clamp(2.4rem, 10vw, 3.5rem); }
