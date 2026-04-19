@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohamed Assem | Network Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header id="navbar">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>MA<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero">
+    <div class="hero-grid">
+      <!-- Background topology decoration -->
+      <div class="hero-bg-nodes" aria-hidden="true">
+        <div class="node n1"></div>
+        <div class="node n2"></div>
+        <div class="node n3"></div>
+        <div class="node n4"></div>
+        <div class="node n5"></div>
+        <svg class="node-lines" viewBox="0 0 800 500" preserveAspectRatio="none">
+          <line x1="120" y1="100" x2="400" y2="250" class="nl"/>
+          <line x1="400" y1="250" x2="680" y2="120" class="nl"/>
+          <line x1="400" y1="250" x2="250" y2="380" class="nl"/>
+          <line x1="400" y1="250" x2="600" y2="400" class="nl"/>
+          <line x1="120" y1="100" x2="250" y2="380" class="nl"/>
+          <line x1="680" y1="120" x2="600" y2="400" class="nl"/>
+        </svg>
+      </div>
+
+      <div class="hero-content reveal">
+        <span class="hero-eyebrow"><i class="fa-solid fa-network-wired"></i> Network Engineer</span>
+        <h1 class="hero-name">Mohamed<br/><span class="accent">Assem</span></h1>
+        <p class="hero-tagline">
+          Building resilient, secure, and scalable enterprise networks — from architecture design to hands-on deployment.
+        </p>
+        <div class="hero-meta">
+          <span><i class="fa-solid fa-location-dot"></i> Giza, Cairo, Egypt</span>
+          <span><i class="fa-solid fa-circle-check"></i> CCNA Certified</span>
+          <span><i class="fa-solid fa-shield-halved"></i> Military: Completed</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Get In Touch</a>
+          <a href="asset/my_cv.pdf" class="btn btn-ghost" download><i class="fa-solid fa-download"></i> Download CV</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal reveal-right">
+        <div class="avatar-frame">
+          <div class="avatar-inner">
+            <img src="asset/my_img.jpeg" alt="Mohamed Assem" class="avatar-img" />
+          </div>
+          <div class="avatar-ring r1"></div>
+          <div class="avatar-ring r2"></div>
+          <!-- Floating stat chips -->
+          <div class="stat-chip chip-a">
+            <i class="fa-solid fa-server"></i>
+            <span>Cisco CCNA</span>
+          </div>
+          <div class="stat-chip chip-b">
+            <i class="fa-solid fa-lock"></i>
+            <span>Network Security</span>
+          </div>
+          <div class="stat-chip chip-c">
+            <i class="fa-solid fa-diagram-project"></i>
+            <span>3+ Projects</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-dot"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I am a <strong>Cisco Certified Network Associate</strong> with a strong foundation in enterprise routing and switching, network security, and infrastructure management. I hold a Bachelor's degree in Computer and Information Technology from Damanhour University, graduating with a Very Good distinction.
+          </p>
+          <p>
+            My professional journey includes hands-on experience at the <strong>Armed Forces Officers Administration</strong>, where I was responsible for maintaining mission-critical network infrastructure, administering systems, and ensuring maximum uptime across operational environments.
+          </p>
+          <p>
+            I am actively advancing my expertise toward <strong>CCNP Enterprise</strong> and <strong>MCSA</strong>, with a deep interest in network automation, security hardening, and cloud-hybrid architectures. I thrive in high-stakes, reliability-focused environments where precision and professionalism are non-negotiable.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-num">4+</span>
+              <span class="highlight-label">Years of Study</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-num">3+</span>
+              <span class="highlight-label">Certifications</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-num">B+</span>
+              <span class="highlight-label">Academic Grade</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-info-card reveal reveal-right">
+          <h3>Personal Information</h3>
+          <ul class="info-list">
+            <li><i class="fa-solid fa-user"></i><span><strong>Name:</strong> Mohamed Assem</span></li>
+            <li><i class="fa-solid fa-location-dot"></i><span><strong>Location:</strong> Giza, Cairo, Egypt</span></li>
+            <li><i class="fa-solid fa-phone"></i><span><strong>Phone:</strong> +20 109 144 7918</span></li>
+            <li><i class="fa-solid fa-envelope"></i><span><strong>Email:</strong> mohamedassem774@gmail.com</span></li>
+            <li><i class="fa-solid fa-graduation-cap"></i><span><strong>Degree:</strong> B.Sc. Computer & IT</span></li>
+            <li><i class="fa-solid fa-university"></i><span><strong>University:</strong> Damanhour University</span></li>
+            <li><i class="fa-solid fa-language"></i><span><strong>Languages:</strong> Arabic (Native), English (Very Good)</span></li>
+            <li><i class="fa-solid fa-shield"></i><span><strong>Military:</strong> Completed</span></li>
+          </ul>
+          <a href="asset/my_cv.pdf" class="btn btn-primary btn-full" download>
+            <i class="fa-solid fa-file-pdf"></i> Download Full CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Expertise</span>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+
+      <!-- Progress Bars -->
+      <div class="skills-bars reveal">
+        <h3 class="skills-subtitle">Core Competencies</h3>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span><i class="fa-solid fa-network-wired"></i> Routing &amp; Switching</span>
+            <span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span><i class="fa-solid fa-shield-halved"></i> Network Security</span>
+            <span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span><i class="fa-solid fa-server"></i> System Administration</span>
+            <span class="skill-pct">82%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span><i class="fa-solid fa-headset"></i> IT Help Desk &amp; Support</span>
+            <span class="skill-pct">88%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span><i class="fa-solid fa-camera-cctv"></i> CCTV Systems</span>
+            <span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+        </div>
+      </div>
+
+      <!-- Tool Cards -->
+      <div class="skills-grid reveal">
+        <h3 class="skills-subtitle" style="grid-column:1/-1;">Tools &amp; Technologies</h3>
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fa-solid fa-sitemap"></i></div>
+          <span>Cisco Packet Tracer</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fa-solid fa-desktop"></i></div>
+          <span>VMware Workstation</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fa-brands fa-windows"></i></div>
+          <span>Windows Server (MCSA)</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fa-solid fa-database"></i></div>
+          <span>Database Administration</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fa-solid fa-file-excel"></i></div>
+          <span>Microsoft Office Suite</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fa-solid fa-video"></i></div>
+          <span>CCTV &amp; IP Cameras</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fa-solid fa-diagram-project"></i></div>
+          <span>Network Topology Design</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+          <span>Hardware Maintenance</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Background</span>
+        <h2 class="section-title">Experience &amp; Education</h2>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Experience items -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-type work">Work Experience</span>
+              <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Jan 2025 – Mar 2026</span>
+            </div>
+            <h3>Technical Support &amp; Network Assistant</h3>
+            <h4>Armed Forces Officers Administration</h4>
+            <ul class="timeline-points">
+              <li>Managed and maintained enterprise-level network infrastructure and hardware assets across multiple operational departments</li>
+              <li>Administered Windows Server environments, ensured data integrity through regular database maintenance and backup protocols</li>
+              <li>Monitored system health and network performance, achieving high uptime standards in mission-critical environments</li>
+              <li>Provided Tier-1 and Tier-2 technical support to end users, diagnosing and resolving hardware, software, and connectivity issues</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Network Maintenance</span>
+              <span>Sysadmin</span>
+              <span>Technical Support</span>
+              <span>Database</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"><i class="fa-solid fa-certificate"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-type training">Training</span>
+              <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2023 – 2024</span>
+            </div>
+            <h3>Cisco Networking Academy</h3>
+            <h4>CCNA v7 Program — Enterprise Networking, Security &amp; Automation</h4>
+            <ul class="timeline-points">
+              <li>Completed comprehensive CCNA v7 curriculum covering enterprise routing and switching architectures</li>
+              <li>Hands-on configuration and troubleshooting of OSPF, EIGRP, BGP, VLAN, and inter-VLAN routing scenarios</li>
+              <li>Studied network security fundamentals, ACLs, VPN, and network automation concepts</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>CCNA v7</span>
+              <span>Routing</span>
+              <span>Switching</span>
+              <span>Security</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-type edu">Education</span>
+              <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2020 – 2024</span>
+            </div>
+            <h3>Bachelor of Computer &amp; Information Technology</h3>
+            <h4>Damanhour University — Grade: Very Good (B+)</h4>
+            <ul class="timeline-points">
+              <li>Major: Information Technology with focus on Networking, Security, and System Administration</li>
+              <li>Relevant coursework: Computer Networks, Operating Systems, Database Systems, Network Security, IT Infrastructure</li>
+              <li>Graduated with a Very Good distinction in a highly competitive technical program</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>IT Major</span>
+              <span>Networking</span>
+              <span>Security</span>
+              <span>Sysadmin</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"><i class="fa-solid fa-book-open"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-type self">Self-Development</span>
+              <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Ongoing</span>
+            </div>
+            <h3>Advanced Self-Study &amp; Professional Development</h3>
+            <h4>Independent Learning</h4>
+            <ul class="timeline-points">
+              <li><strong>CCNP Enterprise:</strong> Advanced routing and switching, SD-WAN, and enterprise architecture design</li>
+              <li><strong>MCSA (Server Administration):</strong> Windows Server deployment, Active Directory, Group Policy, DNS/DHCP</li>
+              <li><strong>CCTV Systems:</strong> IP camera installation, NVR/DVR configuration, cable management, and surveillance design</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>CCNP</span>
+              <span>MCSA</span>
+              <span>CCTV</span>
+              <span>VMware</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATIONS ===================== -->
+  <section id="certifications" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Credentials</span>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon active"><i class="fa-solid fa-network-wired"></i></div>
+          <div class="cert-body">
+            <span class="cert-badge active">Achieved</span>
+            <h3>CCNA v7</h3>
+            <p>Cisco Certified Network Associate — Enterprise Networking, Security &amp; Automation</p>
+            <div class="cert-issuer"><i class="fa-solid fa-building"></i> Cisco Networking Academy</div>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon progress"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="cert-body">
+            <span class="cert-badge progress">In Progress</span>
+            <h3>CCNA Security</h3>
+            <p>Cisco Certified Network Associate — Security specialization and network threat mitigation</p>
+            <div class="cert-issuer"><i class="fa-solid fa-building"></i> Cisco</div>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon progress"><i class="fa-solid fa-layer-group"></i></div>
+          <div class="cert-body">
+            <span class="cert-badge progress">In Progress</span>
+            <h3>CCNP Enterprise</h3>
+            <p>Cisco Certified Network Professional — Advanced enterprise routing, switching &amp; SD-WAN</p>
+            <div class="cert-issuer"><i class="fa-solid fa-building"></i> Cisco</div>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon planned"><i class="fa-brands fa-microsoft"></i></div>
+          <div class="cert-body">
+            <span class="cert-badge planned">Planned</span>
+            <h3>MCSA</h3>
+            <p>Microsoft Certified Solutions Associate — Windows Server administration and deployment</p>
+            <div class="cert-issuer"><i class="fa-solid fa-building"></i> Microsoft</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Portfolio</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-city"></i></div>
+            <span class="project-tag">Enterprise Design</span>
+          </div>
+          <h3>Multi-Branch Enterprise Network Infrastructure</h3>
+          <p>
+            Designed and simulated a full-scale enterprise network for a 3-branch organization using Cisco Packet Tracer. The solution features a hierarchical three-tier architecture (Core, Distribution, Access) with redundant WAN links, dynamic routing via OSPF, centralized DHCP/DNS services, and a site-to-site VPN connecting all branches securely.
+          </p>
+          <div class="project-details">
+            <div class="project-detail-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>Hierarchical 3-tier design with redundancy</span>
+            </div>
+            <div class="project-detail-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>OSPF multi-area dynamic routing</span>
+            </div>
+            <div class="project-detail-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>Site-to-site IPsec VPN tunnel</span>
+            </div>
+            <div class="project-detail-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>ACLs and firewall policy design</span>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span>Cisco Packet Tracer</span>
+            <span>OSPF</span>
+            <span>VPN</span>
+            <span>ACL</span>
+            <span>HSRP</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-diagram-project"></i></div>
+            <span class="project-tag">Lab / Routing</span>
+          </div>
+          <h3>VLAN Segmentation &amp; Inter-VLAN Routing Lab</h3>
+          <p>
+            Engineered a comprehensive campus network lab featuring advanced VLAN segmentation, inter-VLAN routing using Router-on-a-Stick and Layer 3 switching, Spanning Tree Protocol (STP) optimization, and EtherChannel link aggregation. The design ensured traffic isolation between departments and eliminated broadcast storms.
+          </p>
+          <div class="project-details">
+            <div class="project-detail-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>8 VLANs for full department isolation</span>
+            </div>
+            <div class="project-detail-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>Layer 3 switching with SVIs</span>
+            </div>
+            <div class="project-detail-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>Rapid STP + PortFast for uptime</span>
+            </div>
+            <div class="project-detail-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>EIGRP &amp; OSPF redistribution</span>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span>VLAN</span>
+            <span>Inter-VLAN</span>
+            <span>STP</span>
+            <span>EIGRP</span>
+            <span>EtherChannel</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-camera-cctv"></i></div>
+            <span class="project-tag">Physical Security</span>
+          </div>
+          <h3>CCTV Surveillance System Deployment</h3>
+          <p>
+            Planned and deployed a full IP-based CCTV surveillance system for a mid-sized office facility. The project involved site survey, camera placement strategy, NVR configuration, network bandwidth planning for video streams, and remote access setup for authorized personnel via secure VPN-authenticated connections.
+          </p>
+          <div class="project-details">
+            <div class="project-detail-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>16-channel IP camera deployment</span>
+            </div>
+            <div class="project-detail-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>NVR/DVR configuration &amp; storage planning</span>
+            </div>
+            <div class="project-detail-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>Secure remote access via VPN</span>
+            </div>
+            <div class="project-detail-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>PoE switch integration &amp; cabling</span>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span>IP Cameras</span>
+            <span>NVR</span>
+            <span>PoE</span>
+            <span>VPN</span>
+            <span>Network Design</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Let's Connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <div class="contact-grid">
+        <!-- Info -->
+        <div class="contact-info reveal">
+          <p class="contact-intro">
+            Whether you have a project proposal, a job opportunity, or simply want to discuss network engineering — I'm always open to a conversation.
+          </p>
+          <div class="contact-items">
+            <a href="tel:+201091447918" class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <span class="contact-item-label">Phone</span>
+                <span class="contact-item-value">+20 109 144 7918</span>
+              </div>
+            </a>
+            <a href="mailto:mohamedassem774@gmail.com" class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <span class="contact-item-label">Email</span>
+                <span class="contact-item-value">mohamedassem774@gmail.com</span>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <span class="contact-item-label">Location</span>
+                <span class="contact-item-value">Giza, Cairo, Egypt</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-availability">
+            <span class="avail-dot"></span>
+            Available for new opportunities
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrap reveal reveal-right">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Smith" required/>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="john@company.com" required/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project / Opportunity / Collaboration"/>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or inquiry..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-note" id="form-note"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <a href="#hero" class="nav-logo footer-logo">
+          <span class="logo-bracket">&lt;</span>MA<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Network Engineer · CCNA Certified · Cairo, Egypt</p>
+      </div>
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Mohamed Assem. All rights reserved.</span>
+        <span>Built with <i class="fa-solid fa-heart" style="color:#60a5fa;"></i> &amp; precision</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
